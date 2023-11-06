@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+    <link rel="icon" href="logo/logoicon.jpg" type="image/x-icon">
+    <title>FashionFushion</title>
+</head>
+<body>
+    <header id="header">
+<a href="index.html"><img src="logo/logoicon.jpg" alt="logo" height="70" width="70"></a>
+<div>
+    <ul id="navbar">
+         <li><a class="active"   href="index.html">Home</a></li>
+         <li><a href="men.html">Mens</a></li>
+         <li><a href="women.html">Ladies</a></li>
+         <li><a href="kids.html">Kids</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="login.html">Login</a></li>
+          <a href="addcart.html"> <img src="Image/shoppingbag.png" width="30px" height="30px"></a>
+          
+            <img src="Image/menuicon.png" class="me nu-icon" onclick="menutoggle()" >
+          
+    </ul>
+</div>
+    </header>
+    <aside class="row">
+        <section class="col-2">
+            <h1>FashionFushion <br>Unlock Your Fashion Journey!  </h1>
+            <div class="pic"><img src="advertpictures/frontpage.jpg" alt=""></div>
+            <h1>Runway-Ready: Unveiling the Hottest Fashion Trends!</h1>
+            
+            <a href="women.html" class="btn">Explore Now &#8594;</a>
+
+        </section>
+        <div class="col-2">
+            
+
+        </div>
+    </aside>
+        <!------------------------------------------------------table for special day for offers--------------->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for shoes or clothes">
+            <div id="search-results"></div>
+        </div>
+    
+        <div class="product-list">
+            <!-- Your list of shoes and clothes here -->
+        </div>
+
+        <!-------------------------------------create section for search button-------------------------------------->
+        <!-----------------create a countdown for discount-------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<div class="countdown">
+    <h1>Offer Ends In:</h1>
+    <div id="timer">
+        <span id="days">00</span>
+        <span id="hours">00</span>
+        <span id="minutes">00</span>
+        <span id="seconds">00</span>
+    </div>
+</div>
+
+        <main>
+            
+        <div class="small-container">
+            <h2 class="title">Premium </h2>
+            <marquee behavior="scroll" direction="left" scrollamount="10"  ><h2>BEST SALES!!</h2></marquee>
+            <marquee behavior="scroll" direction="left" scrollamount="12"  ><h2>Featured Sales</h2></marquee>
+            <table border="7" align = "center">
+                <caption>Days Offers</caption>
+                <tr>
+                    <th>Days</th>
+                    <th>Percentage%</th>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                <td>70% Black Friday</td>
+                </tr>
+                    <tr>
+                        
+                            <th>Saturday</th>
+                        <td> Saturday 50% Offer</td>
+
+                    </tr>
+                    <tr>
+                        
+                            <th>Sunday</th>
+                        <td>Sunday 40% Offer</td>
+
+                    </tr>
+                    <tr > 
+                        <th>Other Days</th>
+                        <td>Normal prices</td>
+                    </tr>
+            </table>
+            <div class="row">
+                
+                <div class="col-4">
+                    <img src="women/women-6.jpeg" width="740" height="380">
+                   <h3>Jeannie Dress </h3>
+                               
+                </div>
+                <div class="col-4">
+                    <img src="kids/kid-4.jpg" width="740" height="380">
+                    <h3>AVA Sequin </h3>
+                
+               
+                </div>
+                <div class="col-4">
+                    <img src="women/women-3.jpeg" width="740" height="380">
+                    <h3>Nodle Dress</h3>
+                    
+               
+                </div>
+                <div class="col-4">
+                    <img src="men/men-2.jpg" width="740" height="380">
+                    <h3>Street Wear Flunnel</h3>
+                    
+                
+                </div>
+                <div class="col-4">
+                    <img src="kids/kid-2.jpg" width="740" height="380">
+                   <h3>Cavi Wear</h3>
+                   
+            
+                </div>
+                <div class="col-4">
+                    <img src="men/men-1.jpg" width="740" height="380">
+                    <h3>Classy Puff Wear</h3>
+                   
+                </div>
+                <div class="col-4">
+                    <img src="kids/kid-1.jpg" width="740" height="380">
+                    <h3>Rockstar Wear</h3>
+                
+            
+                </div>
+                <div class="col-4">
+                    <img src="women/women-1.jpeg" width="740" height="380">
+                    <h3>Cherri Blue Ava</h3>
+                  
+              
+                </div>
+        
+        </div>
+        <hr><hr>
+        <marquee behavior="scroll" direction="right" scrollamount="12" ><h2>Fashion NOVA</h2></marquee>
+
+        <section class="viva">
+            <h2><b>Watch Our Fashion Nova Partners</b></h2>
+            <video width="600px" height="500px" controls="controls"/> 
+            <source src="video/fasionnova.mp4" type="video/mp4"> 
+            </video>
+        </section>
+
+    </main>
+    <div class="container">
+        <div class="list">
+          <h2>Dresses</h2>
+          <ul>
+            <li>Maxi Dresses</li>
+            <li>Sundresses</li>
+            <li>Cocktail Dresses</li>
+            <li>Little Black Dresses (LBD)</li>
+            <li>Ball Gowns</li>
+          </ul>
+        </div>
+    
+        <div class="list">
+          <h2>T-Shirts</h2>
+          <ul>
+            <li>Crewneck T-Shirts</li>
+            <li>V-Neck T-Shirts</li>
+            <li>Graphic Tees</li>
+            <li>Long Sleeve T-Shirts</li>
+            <li>Polo Shirts</li>
+          </ul>
+        </div>
+    
+        <div class="list">
+          <h2>Shoes</h2>
+          <ul>
+            <li>Sneakers</li>
+            <li>High Heels</li>
+            <li>Boots</li>
+            <li>Flats</li>
+            <li>Sandals</li>
+          </ul>
+        </div>
+      </div>
+      
+      <br>
+      <table>
+        <tr>
+            <th>Day</th>
+            <th>Offer</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td class="discounted">50% off<br>on Clothing</td>
+        </tr>
+        <tr>
+            <td>20% off<br>on Kids Clothes</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td class="discounted">40% off<br>on Shoes</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class="discounted">30% off<br>on Jewelry</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Thursday</td>
+            <td>15% off<br>on Dresses</td>
+        </tr>
+        <tr>
+            <td class="discounted">25% off<br>on Home Decor</td>
+        </tr>
+       
+    </table>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="logo/logoicon.jpg" alt="Company Logo" height="70" width="70">
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+           
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+       
+        </div>
+        <div class="footer-info">
+          &copy; 2023 Your Company Name. All rights reserved.
+        </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
