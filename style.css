@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: rgba(167, 180, 240, 0.747)
+
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:#E3E6F3 ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index:999 ;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    }
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: #088178;
+}
+#navbar li a:active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#088178 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: rgb(49, 45, 68);
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    display: inline-block;
+    background: #00031f;
+    color: #fff;
+    padding: 8px 30px ;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition:background 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn:hover{
+    background: #2aadff;
+}
+
+.header .row{
+margin-top:70px;
+}
+.pic{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{   
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition:tranform 0.5s ;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    padding-top: o;
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #2b211f;
+    width: 80px;
+    height: 5px;
+    border-radius:5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%) ;
+}
+h4{
+    color: #000;
+    font-weight: normal;
+
+}
+.small-container .title{
+    color: #2c3355;
+}
+.small-container .title::after{
+    color: #1f0107;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4 h3{
+    font-size: 30px;
+    background: radial-gradient(#97dcf1,#61bce0);
+    
+}
+.col-4 p{
+    color: #000;
+    font-size: 20px;
+}
+.rating .fa{
+    color:#000;
+}
+ .col-4:hover{
+    transform: translateY(-5px);
+ }
+ marquee{
+    color: rgb(0, 4, 255);
+    font-family:  'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+ }
+ .viva video{
+    left: 0;
+ }
+ table{
+    font-size: 50px;
+    color: rgb(63, 22, 7);
+ }  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .list {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #e7aeae;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #333;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f0c4c4;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  /* You can add additional styling as needed */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    flex: 1;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer-social a {
+    margin-right: 10px;
+  }
+  
+  .footer-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footer-info a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .team-section {
+    padding: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .team-member img {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  .contact-section {
+    padding: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    margin: 5px 0;
+    padding: 8px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }  
+  /* styles.css */
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+#search-results {
+    margin-top: 10px;
+}
+.countdown {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto;
+    max-width: 300px;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+span {
+    font-size: 2em;
+}
